@@ -16,11 +16,7 @@ struct ContentView: View {
         .edgesIgnoringSafeArea(.all)
       
       VStack {
-        Button {
-          
-        } label: {
-          Text("Message")
-        }
+        Text(viewModel.message)
 
         Spacer()
         
