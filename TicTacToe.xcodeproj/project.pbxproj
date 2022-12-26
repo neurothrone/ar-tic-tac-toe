@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F3580A8295A60ED008D3936 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3580A7295A60ED008D3936 /* TicTacToeApp.swift */; };
+		2F3580A8295A60ED008D3936 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3580A7295A60ED008D3936 /* AppMain.swift */; };
 		2F3580AA295A60ED008D3936 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3580A9295A60ED008D3936 /* ContentView.swift */; };
 		2F3580AC295A60EE008D3936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580AB295A60EE008D3936 /* Assets.xcassets */; };
 		2F3580AF295A60EE008D3936 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580AE295A60EE008D3936 /* Preview Assets.xcassets */; };
 		2F3580B6295A6113008D3936 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3580B5295A6113008D3936 /* MultipeerSession.swift */; };
+		2F3580B9295A6487008D3936 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3580B8295A6487008D3936 /* ARViewContainer.swift */; };
+		2F3580BB295A6541008D3936 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3580BA295A6541008D3936 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F3580A4295A60ED008D3936 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F3580A7295A60ED008D3936 /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
+		2F3580A7295A60ED008D3936 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		2F3580A9295A60ED008D3936 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F3580AB295A60EE008D3936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F3580AE295A60EE008D3936 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F3580B5295A6113008D3936 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 		2F3580B7295A61A5008D3936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2F3580B8295A6487008D3936 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		2F3580BA295A6541008D3936 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +58,13 @@
 		2F3580A6295A60ED008D3936 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				2F3580B7295A61A5008D3936 /* Info.plist */,
-				2F3580A7295A60ED008D3936 /* TicTacToeApp.swift */,
+				2F3580A7295A60ED008D3936 /* AppMain.swift */,
 				2F3580A9295A60ED008D3936 /* ContentView.swift */,
+				2F3580BA295A6541008D3936 /* ViewModel.swift */,
+				2F3580B8295A6487008D3936 /* ARViewContainer.swift */,
 				2F3580B5295A6113008D3936 /* MultipeerSession.swift */,
 				2F3580AB295A60EE008D3936 /* Assets.xcassets */,
+				2F3580B7295A61A5008D3936 /* Info.plist */,
 				2F3580AD295A60EE008D3936 /* Preview Content */,
 			);
 			path = TicTacToe;
@@ -142,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3580BB295A6541008D3936 /* ViewModel.swift in Sources */,
 				2F3580B6295A6113008D3936 /* MultipeerSession.swift in Sources */,
+				2F3580B9295A6487008D3936 /* ARViewContainer.swift in Sources */,
 				2F3580AA295A60ED008D3936 /* ContentView.swift in Sources */,
-				2F3580A8295A60ED008D3936 /* TicTacToeApp.swift in Sources */,
+				2F3580A8295A60ED008D3936 /* AppMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
