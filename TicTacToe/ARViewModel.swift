@@ -61,6 +61,12 @@ extension ARViewModel: ARSessionDelegate {
     arConfiguration.planeDetection = [.horizontal]
     arConfiguration.environmentTexturing = .automatic
     
+    arView.addCoachingOverlay()
+    
+#if DEBUG
+//    arView.debugOptions = [.showFeaturePoints, .showAnchorOrigins, .showAnchorGeometry]
+#endif
+    
     arView.session.run(arConfiguration)
   }
   
