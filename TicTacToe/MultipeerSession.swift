@@ -75,7 +75,7 @@ final class MultipeerSession: NSObject {
   }
   
   var connectedPeers: [MCPeerID] {
-    return session.connectedPeers
+    session.connectedPeers
   }
 }
 
