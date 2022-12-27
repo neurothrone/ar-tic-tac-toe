@@ -5,30 +5,42 @@
 //  Created by Zaid Neurothrone on 2022-12-27.
 //
 
+import RealityKit
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject private var viewModel: ViewModel = .init()
+  @StateObject private var arViewModel: ARViewModel = .init()
   
   var body: some View {
     ZStack(alignment: .top) {
-      ARViewContainer()
+      ARViewContainer(arViewModel: arViewModel)
         .edgesIgnoringSafeArea(.all)
+
       
       VStack {
-        Text(viewModel.message)
+        Text(arViewModel.message)
 
         Spacer()
         
         HStack {
-          Button("Player 1", action: viewModel.player1ButtonPressed)
-          Button("Clear", action: viewModel.clearButtonPressed)
-          Button("Player 2", action: viewModel.player2ButtonPressed)
+          Button("Player 1", action: arViewModel.player1ButtonPressed)
+          Button("Clear", action: arViewModel.clearButtonPressed)
+          Button("Player 2", action: arViewModel.player2ButtonPressed)
         }
       }
     }
-    .onAppear(perform: viewModel.setUp)
   }
+}
+
+struct ARViewContainer: UIViewRepresentable {
+  var arViewModel: ARViewModel
+  
+  func makeUIView(context: Context) -> ARView {
+    arViewModel.setUp()
+    return arViewModel.arView
+  }
+  
+  func updateUIView(_ uiView: ARView, context: Context) {}
 }
 
 struct ContentView_Previews: PreviewProvider {
