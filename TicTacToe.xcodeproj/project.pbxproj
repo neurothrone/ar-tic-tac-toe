@@ -12,7 +12,6 @@
 		2F3580AC295A60EE008D3936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580AB295A60EE008D3936 /* Assets.xcassets */; };
 		2F3580AF295A60EE008D3936 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580AE295A60EE008D3936 /* Preview Assets.xcassets */; };
 		2F3580B6295A6113008D3936 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3580B5295A6113008D3936 /* MultipeerSession.swift */; };
-		2F3580B9295A6487008D3936 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3580B8295A6487008D3936 /* CustomARView.swift */; };
 		2F3581E1295AB4FC008D3936 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3581E0295AB4FC008D3936 /* ARModel.swift */; };
 		2F3581E3295AB500008D3936 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3581E2295AB500008D3936 /* ARViewModel.swift */; };
 		2F3581E6295B7E86008D3936 /* ARView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3581E5295B7E86008D3936 /* ARView+Extensions.swift */; };
@@ -26,7 +25,6 @@
 		2F3580AE295A60EE008D3936 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F3580B5295A6113008D3936 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 		2F3580B7295A61A5008D3936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		2F3580B8295A6487008D3936 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		2F3581E0295AB4FC008D3936 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
 		2F3581E2295AB500008D3936 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		2F3581E5295B7E86008D3936 /* ARView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+Extensions.swift"; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				2F3581E0295AB4FC008D3936 /* ARModel.swift */,
 				2F3581E5295B7E86008D3936 /* ARView+Extensions.swift */,
 				2F3580B5295A6113008D3936 /* MultipeerSession.swift */,
-				2F3581E4295AB79F008D3936 /* Old */,
 				2F3580AB295A60EE008D3936 /* Assets.xcassets */,
 				2F3580B7295A61A5008D3936 /* Info.plist */,
 				2F3580AD295A60EE008D3936 /* Preview Content */,
@@ -82,14 +79,6 @@
 				2F3580AE295A60EE008D3936 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2F3581E4295AB79F008D3936 /* Old */ = {
-			isa = PBXGroup;
-			children = (
-				2F3580B8295A6487008D3936 /* CustomARView.swift */,
-			);
-			path = Old;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +154,6 @@
 				2F3580B6295A6113008D3936 /* MultipeerSession.swift in Sources */,
 				2F3581E3295AB500008D3936 /* ARViewModel.swift in Sources */,
 				2F3581E6295B7E86008D3936 /* ARView+Extensions.swift in Sources */,
-				2F3580B9295A6487008D3936 /* CustomARView.swift in Sources */,
 				2F3580AA295A60ED008D3936 /* ContentView.swift in Sources */,
 				2F3581E1295AB4FC008D3936 /* ARModel.swift in Sources */,
 				2F3580A8295A60ED008D3936 /* AppMain.swift in Sources */,
